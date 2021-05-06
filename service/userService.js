@@ -9,7 +9,12 @@ const createUser = async (fullname, email) => {
     await User.create({ fullname, email })
 }
 
+const deleteUser = async (email) => {
+    await User.destroy({ where: { email } });
+}
+
 module.exports = {
     getAllUsers,
-    createUser
+    createUser,
+    deleteUser
 }
