@@ -5,6 +5,11 @@ const getAllUsers = async () => {
     return users.map(user => user.dataValues);
 }
 
+const createUser = async (fullname, email) => {
+    await User.create({ fullname, email })
+}
+
 module.exports = {
-    getAllUsers
+    getAllUsers,
+    createUser
 }
