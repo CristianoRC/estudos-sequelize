@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/CristianoRC/estudos-sequelize#readme",
   "dependencies": {
+    "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
   }
 }
