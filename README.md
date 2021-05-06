@@ -1,1 +1,1 @@
-# estudos-sequelize
+# Estudos Sequelize
