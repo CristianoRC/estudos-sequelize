@@ -13,8 +13,13 @@ const deleteUser = async (email) => {
     await User.destroy({ where: { email } });
 }
 
+const updateName = async (id, newName) => {
+    await User.update({ fullname: newName }, { where: { id } });
+}
+
 module.exports = {
     getAllUsers,
     createUser,
-    deleteUser
+    deleteUser,
+    updateName
 }
